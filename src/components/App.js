@@ -19,7 +19,7 @@ const App = () => {
         <input value={budget} onChange={(e)=>setBudget(e.target.value)} type="number"/>
         <table>
 
-        <thead>Items you can buy are in Green color</thead>
+        <thead><th>Items you can buy are in Green color</th></thead>
         <tbody className="productsList">
           {
             products.map((product)=>{
