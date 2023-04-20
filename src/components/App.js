@@ -17,8 +17,10 @@ const App = () => {
         {/* Do not remove the main div */}
         <h3>Enter your budget to check available items:</h3>
         <input value={budget} onChange={(e)=>setBudget(e.target.value)} type="number"/>
-        <h3>Items you can buy are in Green color</h3>
-        <table className="productsList">
+        <table>
+
+        <thead>Items you can buy are in Green color</thead>
+        <tbody className="productsList">
           {
             products.map((product)=>{
               return <tr className='product'>
@@ -27,6 +29,7 @@ const App = () => {
                 </tr>
             })
           }
+        </tbody>
         </table>
     </div>
   )
